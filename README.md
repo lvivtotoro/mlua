@@ -7,3 +7,5 @@ To learn of it's syntax, simply run it the JAR with no arguments:
 	./mlua.jar		# if the JAR is executable (linux, probably windows)
 	java -jar ./mlua.jar	# if the JAR is not executable (others)
 				# ASSUMING THAT mlua.jar IS THE JAR NAME
+# MLua syntax
+Learn MLua on [the wiki](https://github.com/lvivtotoro/mlua/wiki)
