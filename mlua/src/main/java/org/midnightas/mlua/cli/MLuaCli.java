@@ -10,6 +10,7 @@ import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 
+import org.apache.commons.io.FilenameUtils;
 import org.midnightas.mlua.MLua;
 
 public class MLuaCli {
@@ -63,7 +64,7 @@ public class MLuaCli {
 	}
 
 	public void compile(File file) {
-		File resultFile = new File(Utils.removeExtension(file.getAbsolutePath()) + ".lua");
+		File resultFile = new File(FilenameUtils.removeExtension(file.getAbsolutePath()) + ".lua");
 
 		try {
 			String input = new String(Files.readAllBytes(file.toPath()), Charset.forName(encodingToUse));
