@@ -1,0 +1,14 @@
+class A contains
+	a = 5
+
+	constructor()
+	end
+	
+	function c()
+		return self.a
+	end
+end
+
+print(lambda a: a * 2)
+l = lambda b: return b + A():c() end
+print(l(-1.5))
